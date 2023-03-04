@@ -8,5 +8,10 @@ namespace MovieApplication.Controllers
         {
             return "Hey you";
         }
+
+        public string Welcom()
+        {
+            return "nice job";
+        }
     }
 }
