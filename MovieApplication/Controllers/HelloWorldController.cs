@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
 
 namespace MovieApplication.Controllers
 {
@@ -9,9 +10,9 @@ namespace MovieApplication.Controllers
             return "Hey you";
         }
 
-        public string Welcom()
+        public string Welcom(string name, int newTime=1)
         {
-            return "nice job";
+            return HtmlEncoder.Default.Encode($"Hello {name}, NewTime is :  {newTime}");
         }
     }
 }
