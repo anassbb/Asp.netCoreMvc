@@ -5,9 +5,9 @@ namespace MovieApplication.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hey you";
+            return View();
         }
 
         public string Welcom(string name, int newTime=1)
